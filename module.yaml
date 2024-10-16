@@ -1,0 +1,4 @@
+run:
+    # - if:
+    #   running: 'Hyprland'
+    - shell: 'swww img --transition-step 40 --transition-type simple --resize {% set bgmodes = {"fill": "crop", "fit": "fit"} %} {{bgmodes[wallpaper.mode]}} "{{wallpaper.path}}"'

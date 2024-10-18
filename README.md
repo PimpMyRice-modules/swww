@@ -5,5 +5,5 @@
 ## Set up
 
 ```bash
-pimp clone module pimp://swww
+rice clone module pimp://swww
 ```

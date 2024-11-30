@@ -1,4 +1,10 @@
-os: linux
-if_running: swww-daemon
+# yaml-language-server: $schema=../../.json_schemas/module.json
+
+os:
+  - linux
+
 run:
-    - shell: 'swww img --transition-step 40 --transition-type simple --resize {% set bgmodes = {"fill": "crop", "fit": "fit"} %} {{bgmodes[wallpaper.mode]}} "{{wallpaper.path}}"'
+  - action: shell
+    command:
+      'swww img --transition-step 40 --transition-type simple --resize {% set
+      bgmodes = {"fill": "crop", "fit": "fit"} %} {{bgmodes[wallpaper.mode]}} "{{wallpaper.path}}"'
